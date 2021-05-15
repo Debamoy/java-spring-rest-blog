@@ -27,6 +27,7 @@ public class Author {
 
     public Author() {
         super();
+        posts=new ArrayList<Post>();
     }
 
     public Author(String username, String firstname, String lastname, String password,ArrayList<Post> posts) {
