@@ -30,7 +30,7 @@ public class Author {
         posts=new ArrayList<Post>();
     }
 
-    public Author(String username, String firstname, String lastname, String password,ArrayList<Post> posts) {
+    public Author(String username, String firstname, String lastname, String password) {
         this();
         this.posts=posts;
         this.firstname = firstname;
