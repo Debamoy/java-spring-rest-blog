@@ -29,9 +29,9 @@ public class Author {
         super();
     }
 
-    public Author(String username, String firstname, String lastname, String password) {
+    public Author(String username, String firstname, String lastname, String password,ArrayList<Post> posts) {
         this();
-        this.posts=new ArrayList<>();
+        this.posts=posts;
         this.firstname = firstname;
         this.lastname = lastname;
         this.username = username;
