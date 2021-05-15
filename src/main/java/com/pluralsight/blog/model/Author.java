@@ -39,6 +39,10 @@ public class Author {
         setPassword(password);
     }
 
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
+    }
+
     public void setPassword(String password) {
          this.password = PASSWORD_ENCODER.encode(password);
     }
@@ -74,6 +78,7 @@ public class Author {
     public String getPassword() {
         return password;
     }
+
 
     @Override
     public boolean equals(Object obj) {
