@@ -22,7 +22,7 @@ public class Author {
     private String username;
     @JsonIgnore
     private String password;
-    @OneToMany()
+    @OneToMany(cascade = CascadeType.ALL)
     List<Post> posts;
 
     public Author() {
